@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing</title>
+    <link rel="stylesheet" href="billing.css">
+</head>
+<body>
+    <header>
+        <h1>🧾 Billing</h1>
+        <nav>
+            <a href="structure.html">🏠 Dashboard</a>
+        </nav>
+    </header>
+    <main>
+        <section class="select-patient">
+            <h2>Select Patient</h2>
+            <select id="bill-patient-select" required>
+                <option value="">Select Patient</option>
+            </select>
+        </section>
+        <section class="bill-form-section" style="display:none;">
+            <h2>Bill Details</h2>
+            <form id="bill-form">
+                <table class="services-table">
+                    <thead>
+                        <tr>
+                            <th>Service</th>
+                            <th>Cost (₹)</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="services-body">
+                        <tr>
+                            <td><input type="text" class="service-name" required></td>
+                            <td><input type="number" class="service-cost" min="0" required></td>
+                            <td><button type="button" class="remove-service" disabled>Remove</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button type="button" id="add-service">Add Service</button>
+            </form>
+            <div class="bill-summary">
+                <h3>Bill Summary</h3>
+                <p>Patient: <span id="bill-patient-name"></span></p>
+                <ul id="bill-services-list"></ul>
+                <p><strong>Total: ₹<span id="bill-total">0</span></strong></p>
+                <button id="print-bill">Print Bill</button>
+            </div>
+        </section>
+    </main>
+    <script src="billing.js"></script>
+</body>
+</html> 

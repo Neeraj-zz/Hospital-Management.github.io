@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera Integration - Patient Photo</title>
+    <link rel="stylesheet" href="camera.css">
+</head>
+<body>
+    <header>
+        <h1>📷 Camera Integration (Patient Photo)</h1>
+        <nav>
+            <a href="structure.html">🏠 Dashboard</a>
+        </nav>
+    </header>
+    <main>
+        <section class="camera-section">
+            <h2>Take Patient Photo</h2>
+            <video id="video" autoplay playsinline></video>
+            <canvas id="canvas" style="display:none;"></canvas>
+            <img id="photo-preview" style="display:none;max-width:180px;max-height:180px;border-radius:8px;">
+            <button id="take-photo">Take Photo</button>
+        </section>
+        <section class="patient-details-section">
+            <h2>Patient Details</h2>
+            <form id="patient-form">
+                <label>Name: <input type="text" id="patient-name" required></label>
+                <label>Disease: <input type="text" id="patient-disease" required></label>
+                <label>Entry Date: <input type="date" id="patient-date" required></label>
+                <label>Patient ID: <input type="text" id="patient-id" required></label>
+                <label>Address: <input type="text" id="patient-address" required></label>
+                <input type="hidden" id="patient-photo">
+                <button type="submit">Save Patient</button>
+            </form>
+        </section>
+        <section class="patient-list-section">
+            <h2>Saved Patients</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Photo</th>
+                        <th>Name</th>
+                        <th>Disease</th>
+                        <th>Entry Date</th>
+                        <th>Patient ID</th>
+                        <th>Address</th>
+                    </tr>
+                </thead>
+                <tbody id="patient-list-body"></tbody>
+            </table>
+        </section>
+    </main>
+    <script src="camera.js"></script>
+</body>
+</html> 

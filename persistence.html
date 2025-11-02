@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Persistence</title>
+    <link rel="stylesheet" href="persistence.css">
+</head>
+<body>
+    <header>
+        <h1>💾 Data Persistence</h1>
+        <nav>
+            <a href="structure.html">🏠 Dashboard</a>
+        </nav>
+    </header>
+    <main>
+        <section class="info-section">
+            <h2>How Data is Saved</h2>
+            <p>All your hospital data (patients, doctors, appointments, records, bills) is saved in your browser's <strong>localStorage</strong>. This means your data will remain even if you refresh or close the browser, until you manually clear it.</p>
+        </section>
+        <section class="actions-section">
+            <h2>Manage Data</h2>
+            <button id="export-data">Export All Data (Download JSON)</button>
+            <input type="file" id="import-file" style="display:none;">
+            <button id="import-data">Import Data (Upload JSON)</button>
+            <button id="clear-data">Clear All Data</button>
+        </section>
+        <section class="status-section">
+            <p id="status-message"></p>
+        </section>
+    </main>
+    <script src="persistence.js"></script>
+</body>
+</html> 

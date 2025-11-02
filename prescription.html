@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Prescription Builder</title>
+    <link rel="stylesheet" href="prescription.css">
+</head>
+<body>
+    <header>
+        <h1>🧾 Dynamic Prescription Builder</h1>
+        <nav>
+            <a href="structure.html">🏠 Dashboard</a>
+        </nav>
+    </header>
+    <main>
+        <section class="prescription-form-section">
+            <h2>Create Prescription</h2>
+            <form id="prescription-form">
+                <label>Patient:
+                    <select id="prescription-patient" required>
+                        <option value="">Select Patient</option>
+                    </select>
+                </label>
+                <label>Symptoms:
+                    <input type="text" id="prescription-symptoms" required placeholder="e.g. fever, cough">
+                </label>
+                <div class="medicines-section">
+                    <label>Medicines:</label>
+                    <table class="medicines-table">
+                        <thead>
+                            <tr>
+                                <th>Medicine Name</th>
+                                <th>Dosage</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="medicines-body">
+                            <tr>
+                                <td><input type="text" class="medicine-name" required></td>
+                                <td><input type="text" class="medicine-dosage" required></td>
+                                <td><button type="button" class="remove-medicine" disabled>Remove</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button type="button" id="add-medicine">Add Medicine</button>
+                </div>
+                <button type="submit">Save Prescription</button>
+            </form>
+        </section>
+        <section class="prescription-list-section">
+            <h2>Prescriptions for Patient</h2>
+            <select id="view-patient" required>
+                <option value="">Select Patient</option>
+            </select>
+            <ul id="prescription-list"></ul>
+        </section>
+        <button id="print-prescription">Print Prescription</button>
+    </main>
+    <script src="prescription.js"></script>
+</body>
+</html>

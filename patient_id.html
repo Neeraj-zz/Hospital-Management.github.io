@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient ID Generator</title>
+    <link rel="stylesheet" href="patient_id.css">
+</head>
+<body>
+    <header>
+        <h1>🔖 Patient ID Generator</h1>
+        <nav>
+            <a href="structure.html">🏠 Dashboard</a>
+        </nav>
+    </header>
+    <main>
+        <section class="id-form-section">
+            <h2>Add New Patient</h2>
+            <form id="patient-id-form">
+                <label>Patient Name: <input type="text" id="patient-name" required></label>
+                <button type="submit">Generate ID</button>
+            </form>
+            <p id="id-result"></p>
+        </section>
+        <section class="id-list-section">
+            <h2>Generated Patient IDs</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Patient ID</th>
+                        <th>Name</th>
+                    </tr>
+                </thead>
+                <tbody id="id-list-body"></tbody>
+            </table>
+        </section>
+    </main>
+    <script src="patient_id.js"></script>
+</body>
+</html> 

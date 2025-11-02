@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonus Visual/UX Ideas</title>
+    <link rel="stylesheet" href="bonus_ux.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="structure.html">🏠 Dashboard</a>
+        </nav>
+    </header>
+    <section class="parallax-banner">
+        <div class="banner-content">
+            <h1>Welcome to Our Hospital</h1>
+            <p>Modern Care, Trusted Professionals</p>
+        </div>
+    </section>
+    <main>
+        <section class="avatar-section">
+            <h2>👨‍⚕️ Doctors <button id="add-doctor-btn"><i class="fas fa-plus"></i> Add Doctor</button></h2>
+            <div id="doctor-avatars" class="avatar-grid"></div>
+            <h2>🧑‍🦱 Patients <button id="add-patient-btn"><i class="fas fa-plus"></i> Add Patient</button></h2>
+            <div id="patient-avatars" class="avatar-grid"></div>
+        </section>
+        <section class="gallery-section">
+            <h2>🖼️ Hospital Facilities Gallery <button id="add-image-btn"><i class="fas fa-plus"></i> Add Image</button></h2>
+            <div id="gallery" class="gallery-grid"></div>
+            <input type="file" id="image-upload" accept="image/*" style="display:none;">
+        </section>
+        <section class="rating-section">
+            <h2>🌟 Rate Our Services</h2>
+            <div id="star-rating" class="star-rating"></div>
+            <p id="rating-value"></p>
+        </section>
+    </main>
+    <!-- Modals -->
+    <div id="details-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close-modal">&times;</span>
+            <div id="modal-details"></div>
+        </div>
+    </div>
+    <div id="add-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close-add-modal">&times;</span>
+            <div id="add-form-container"></div>
+        </div>
+    </div>
+    <script src="bonus_ux.js"></script>
+</body>
+</html> 

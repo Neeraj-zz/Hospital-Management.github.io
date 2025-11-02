@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: #607d8b;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+header nav {
+    margin-top: 0.5rem;
+}
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    background: #1976d2;
+    padding: 0.3rem 1rem;
+    border-radius: 5px;
+    margin: 0 0.5rem;
+    font-size: 1rem;
+}
+main {
+    max-width: 700px;
+    margin: 2rem auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 2rem;
+}
+.info-section {
+    margin-bottom: 2rem;
+}
+.actions-section {
+    margin-bottom: 2rem;
+}
+.actions-section button {
+    padding: 0.7rem 1.5rem;
+    background: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+.actions-section button#clear-data {
+    background: #b71c1c;
+}
+.status-section {
+    margin-top: 1rem;
+    min-height: 2rem;
+}
+#status-message {
+    color: #388e3c;
+    font-weight: bold;
+} 

@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: #6d4c41;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+header nav {
+    margin-top: 0.5rem;
+}
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    background: #1976d2;
+    padding: 0.3rem 1rem;
+    border-radius: 5px;
+    margin: 0 0.5rem;
+    font-size: 1rem;
+}
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 2rem;
+}
+.tool-section {
+    margin-bottom: 2.5rem;
+}
+.tool-section h2 {
+    color: #6d4c41;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+button {
+    padding: 0.5rem 1.2rem;
+    background: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+input[type="text"], input[type="email"], input[type="date"] {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+#ls-output, #date-output, #modal-result {
+    margin-top: 0.7rem;
+    color: #388e3c;
+    font-weight: bold;
+}
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background: rgba(0,0,0,0.3);
+}
+.modal-content {
+    background: #fff;
+    margin: 8% auto;
+    padding: 2rem 2.5rem;
+    border-radius: 10px;
+    max-width: 400px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    position: relative;
+}
+.close {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 1.5rem;
+    color: #b71c1c;
+    cursor: pointer;
+}
+.fa-2x {
+    margin: 0 0.5rem;
+    color: #1976d2;
+} 

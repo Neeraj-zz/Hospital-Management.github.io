@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Management</title>
+    <link rel="stylesheet" href="patient.css">
+</head>
+<body>
+    <header>
+        <h1>🧑‍🦱 Patient Management</h1>
+        <nav>
+            <a href="structure.html">🏠 Dashboard</a>
+        </nav>
+    </header>
+    <main>
+        <section class="add-patient">
+            <h2>Add Patient</h2>
+            <form id="patient-form">
+                <input type="hidden" id="patient-id">
+                <label>Name: <input type="text" id="patient-name" required></label>
+                <label>Age: <input type="number" id="patient-age" min="0" required></label>
+                <label>Gender:
+                    <select id="patient-gender" required>
+                        <option value="">Select</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </label>
+                <label>Symptoms: <input type="text" id="patient-symptoms" required></label>
+                <label>Contact: <input type="text" id="patient-contact" required></label>
+                <button type="submit">Add Patient</button>
+                <button type="button" id="cancel-edit" style="display:none;">Cancel Edit</button>
+            </form>
+        </section>
+        <section class="patient-list">
+            <h2>Patient List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Gender</th>
+                        <th>Symptoms</th>
+                        <th>Contact</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="patient-table-body">
+                    <!-- Patient rows will be inserted here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="patient.js"></script>
+</body>
+</html> 

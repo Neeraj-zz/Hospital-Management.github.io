@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-time Search Suggestions</title>
+    <link rel="stylesheet" href="realtime_search.css">
+</head>
+<body>
+    <header>
+        <h1>🔍 Real-time Search Suggestions</h1>
+        <nav>
+            <a href="structure.html">🏠 Dashboard</a>
+        </nav>
+    </header>
+    <main>
+        <section class="search-section">
+            <h2>Search Doctor</h2>
+            <input type="text" id="doctor-search" placeholder="Type doctor name...">
+            <ul id="doctor-suggestions" class="suggestions-list"></ul>
+        </section>
+        <section class="search-section">
+            <h2>Search Patient</h2>
+            <input type="text" id="patient-search" placeholder="Type patient name...">
+            <ul id="patient-suggestions" class="suggestions-list"></ul>
+        </section>
+    </main>
+    <script src="realtime_search.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Announcements</title>
+    <link rel="stylesheet" href="announcements.css">
+</head>
+<body>
+    <header>
+        <h1>🏥 Hospital Announcements</h1>
+        <nav>
+            <a href="structure.html">🏠 Dashboard</a>
+        </nav>
+    </header>
+    <main>
+        <section class="marquee-section">
+            <marquee id="notice-marquee" behavior="scroll" direction="left"></marquee>
+            <button id="show-modal">View All Notices</button>
+        </section>
+        <section class="add-notice-section">
+            <h2>Add New Notice</h2>
+            <form id="notice-form">
+                <input type="text" id="notice-input" placeholder="Enter notice..." required>
+                <button type="submit">Add Notice</button>
+            </form>
+        </section>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="close-modal">&times;</span>
+                <h3>All Notices</h3>
+                <ul id="notice-list"></ul>
+            </div>
+        </div>
+    </main>
+    <script src="announcements.js"></script>
+</body>
+</html> 

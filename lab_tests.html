@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Test Request System</title>
+    <link rel="stylesheet" href="lab_tests.css">
+</head>
+<body>
+    <header>
+        <h1>🧪 Lab Test Request System</h1>
+        <nav>
+            <a href="structure.html">🏠 Dashboard</a>
+        </nav>
+    </header>
+    <main>
+        <section class="add-lab-test-section">
+            <h2>Request Lab Test</h2>
+            <form id="lab-test-form">
+                <label>Patient:
+                    <select id="lab-patient-select" required>
+                        <option value="">Select Patient</option>
+                    </select>
+                </label>
+                <label>Test Type:
+                    <select id="lab-test-type" required>
+                        <option value="">Select Test</option>
+                        <option value="Blood Test">Blood Test</option>
+                        <option value="X-Ray">X-Ray</option>
+                        <option value="MRI">MRI</option>
+                        <option value="CT Scan">CT Scan</option>
+                        <option value="Urine Test">Urine Test</option>
+                    </select>
+                </label>
+                <button type="submit">Request Test</button>
+            </form>
+        </section>
+        <section class="lab-test-list-section">
+            <h2>Lab Test Requests</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Patient</th>
+                        <th>Test Type</th>
+                        <th>Status</th>
+                        <th>Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="lab-test-list-body"></tbody>
+            </table>
+        </section>
+    </main>
+    <script src="lab_tests.js"></script>
+</body>
+</html> 

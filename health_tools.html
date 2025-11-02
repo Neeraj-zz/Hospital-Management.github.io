@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator & Health Tools</title>
+    <link rel="stylesheet" href="health_tools.css">
+</head>
+<body>
+    <header>
+        <h1>🧮 BMI Calculator & Health Tools</h1>
+        <nav>
+            <a href="structure.html">🏠 Dashboard</a>
+        </nav>
+    </header>
+    <main>
+        <section class="tool-section">
+            <h2>BMI Calculator</h2>
+            <form id="bmi-form">
+                <label>Height (cm): <input type="number" id="bmi-height" min="50" max="300" required></label>
+                <label>Weight (kg): <input type="number" id="bmi-weight" min="10" max="300" required></label>
+                <button type="submit">Calculate BMI</button>
+            </form>
+            <p id="bmi-result"></p>
+        </section>
+        <section class="tool-section">
+            <h2>Age Calculator</h2>
+            <form id="age-form">
+                <label>Date of Birth: <input type="date" id="dob" required></label>
+                <button type="submit">Calculate Age</button>
+            </form>
+            <p id="age-result"></p>
+        </section>
+        <section class="tool-section">
+            <h2>Blood Pressure Status Checker</h2>
+            <form id="bp-form">
+                <label>Systolic (upper): <input type="number" id="bp-sys" min="50" max="250" required></label>
+                <label>Diastolic (lower): <input type="number" id="bp-dia" min="30" max="150" required></label>
+                <button type="submit">Check Status</button>
+            </form>
+            <p id="bp-result"></p>
+        </section>
+    </main>
+    <script src="health_tools.js"></script>
+</body>
+</html> 

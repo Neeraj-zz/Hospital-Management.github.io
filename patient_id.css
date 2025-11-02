@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: #8e24aa;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+header nav {
+    margin-top: 0.5rem;
+}
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    background: #1976d2;
+    padding: 0.3rem 1rem;
+    border-radius: 5px;
+    margin: 0 0.5rem;
+    font-size: 1rem;
+}
+main {
+    max-width: 700px;
+    margin: 2rem auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 2rem;
+}
+.id-form-section {
+    margin-bottom: 2rem;
+}
+#patient-id-form {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+#patient-id-form label {
+    font-weight: 500;
+}
+#patient-id-form input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+#patient-id-form button {
+    padding: 0.6rem 1.2rem;
+    background: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+#id-result {
+    color: #388e3c;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+.id-list-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+.id-list-section th, .id-list-section td {
+    padding: 0.8rem 0.5rem;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+}
+.id-list-section th {
+    background: #f4f6f8;
+    color: #8e24aa;
+} 

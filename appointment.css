@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: #1976d2;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+header nav {
+    margin-top: 0.5rem;
+}
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    background: #388e3c;
+    padding: 0.3rem 1rem;
+    border-radius: 5px;
+    margin: 0 0.5rem;
+    font-size: 1rem;
+}
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 2rem;
+}
+.add-appointment form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.add-appointment label {
+    flex: 1 1 200px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+}
+.add-appointment input, .add-appointment select {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 0.3rem;
+}
+.add-appointment button {
+    padding: 0.6rem 1.2rem;
+    background: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.add-appointment button#cancel-edit {
+    background: #b71c1c;
+}
+.appointment-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+.appointment-list th, .appointment-list td {
+    padding: 0.8rem 0.5rem;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+}
+.appointment-list th {
+    background: #f4f6f8;
+    color: #1976d2;
+}
+.appointment-list td button {
+    margin-right: 0.5rem;
+    padding: 0.3rem 0.8rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+.appointment-list td .edit-btn {
+    background: #388e3c;
+    color: #fff;
+}
+.appointment-list td .delete-btn {
+    background: #b71c1c;
+    color: #fff;
+} 

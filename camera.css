@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: #37474f;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+header nav {
+    margin-top: 0.5rem;
+}
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    background: #1976d2;
+    padding: 0.3rem 1rem;
+    border-radius: 5px;
+    margin: 0 0.5rem;
+    font-size: 1rem;
+}
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 2rem;
+}
+.camera-section {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+#video {
+    width: 180px;
+    height: 140px;
+    background: #222;
+    border-radius: 8px;
+    object-fit: cover;
+}
+#photo-preview {
+    margin-top: 0.5rem;
+    border: 2px solid #1976d2;
+}
+#take-photo {
+    background: #388e3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.6rem 1.2rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.patient-details-section {
+    margin-bottom: 2rem;
+}
+#patient-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: flex-start;
+}
+#patient-form label {
+    flex: 1 1 200px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+}
+#patient-form input[type="text"], #patient-form input[type="date"] {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 0.3rem;
+}
+#patient-form button {
+    background: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.6rem 1.2rem;
+    cursor: pointer;
+    font-size: 1rem;
+    align-self: flex-end;
+}
+.patient-list-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+.patient-list-section th, .patient-list-section td {
+    padding: 0.8rem 0.5rem;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+}
+.patient-list-section th {
+    background: #f4f6f8;
+    color: #37474f;
+}
+.patient-list-section td img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #1976d2;
+} 

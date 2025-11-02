@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: #3949ab;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+header nav {
+    margin-top: 0.5rem;
+}
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    background: #1976d2;
+    padding: 0.3rem 1rem;
+    border-radius: 5px;
+    margin: 0 0.5rem;
+    font-size: 1rem;
+}
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 2rem;
+}
+.summary-section {
+    margin-bottom: 2rem;
+}
+#summary {
+    color: #388e3c;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.feedback-form-section {
+    margin-bottom: 2rem;
+}
+#feedback-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: flex-start;
+}
+#feedback-form label {
+    flex: 1 1 200px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+}
+#feedback-form input, #feedback-form select, #feedback-form textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 0.3rem;
+}
+#feedback-form button {
+    padding: 0.6rem 1.2rem;
+    background: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    align-self: flex-end;
+}
+.feedback-list-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+.feedback-list-section th, .feedback-list-section td {
+    padding: 0.8rem 0.5rem;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+}
+.feedback-list-section th {
+    background: #f4f6f8;
+    color: #3949ab;
+} 

@@ -1,0 +1,72 @@
+:root {
+    --bg: #f4f6f8;
+    --text: #222;
+    --header-bg: #1976d2;
+    --header-text: #fff;
+    --card-bg: #fff;
+    --card-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+body {
+    font-family: Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+    transition: background 0.3s, color 0.3s;
+}
+header {
+    background: var(--header-bg);
+    color: var(--header-text);
+    padding: 1rem 2rem;
+    text-align: center;
+    transition: background 0.3s, color 0.3s;
+}
+header nav {
+    margin-top: 0.5rem;
+}
+header nav a {
+    color: var(--header-text);
+    text-decoration: none;
+    background: #388e3c;
+    padding: 0.3rem 1rem;
+    border-radius: 5px;
+    margin: 0 0.5rem;
+    font-size: 1rem;
+}
+#theme-toggle {
+    margin-top: 1rem;
+    padding: 0.5rem 1.2rem;
+    background: #222;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s, color 0.3s;
+}
+.demo-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.demo-card {
+    background: var(--card-bg);
+    box-shadow: var(--card-shadow);
+    border-radius: 10px;
+    padding: 2rem 2.5rem;
+    text-align: center;
+    max-width: 400px;
+    transition: background 0.3s, color 0.3s;
+}
+.dark-mode {
+    --bg: #181a1b;
+    --text: #f4f6f8;
+    --header-bg: #222;
+    --header-text: #fff;
+    --card-bg: #23272a;
+    --card-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+.dark-mode #theme-toggle {
+    background: #f4f6f8;
+    color: #222;
+} 
